@@ -1,0 +1,55 @@
+---
+import "../css/style.scss"
+
+interface Props {
+  title?: string
+  description?: string
+  ogp?: string
+  isIndex?: boolean
+}
+
+const { title, description, ogp, isIndex } = Astro.props
+
+const metaTitle = title ? `${title} | 428LAB BOOKS（仮）` : "428LAB BOOKS（仮）"
+const metaDesc = description || "ページ概要"
+const metaOgp = ogp ? new URL(ogp, Astro.site) : new URL('/images/ogp.jpg', Astro.site)
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:domain" content="books.428lab.net" />
+    <meta property="og:locale" content="ja_JP" />
+
+    <meta name="twitter:site" content="@lab_428" />
+    <meta property="og:type" content={isIndex ? "website" : "article"} />
+    <meta property="og:site_name" content="四谷ラボ" />
+    <meta property="og:title" content={metaTitle} />
+    <meta property="og:image" content={metaOgp} />
+
+    <title>{metaTitle}</title>
+
+    <meta property="og:description" content={metaDesc} />
+    <meta name="description" content={metaDesc} />
+
+    <meta property="og:url" content={canonicalURL} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div id="pagewrap" class="page-wrap">
+      <slot />
+    </div>
+  </body>
+</html>

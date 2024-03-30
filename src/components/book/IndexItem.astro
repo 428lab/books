@@ -1,0 +1,16 @@
+---
+import type { IndexItem } from "../../types/book"
+
+interface Props {
+  item: IndexItem
+}
+
+const { item } = Astro.props
+---
+
+<div class="c-book-index__unit">
+  <h3>{item.section}</h3>
+  <ul>
+    {item.contents.map((content) => <li>{content}</li>)}
+  </ul>
+</div>

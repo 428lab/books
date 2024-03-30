@@ -1,0 +1,46 @@
+---
+interface Props {
+  isIndex: boolean
+}
+
+const { isIndex } = Astro.props
+
+// サイトトップか否かでロゴのタグを切り替え
+const LogoElm = isIndex ? "h1" : "div"
+---
+
+<header class="l-header">
+  <LogoElm class="l-header-logo">
+    <a href="/">
+      <img src={`/images/common/logo.svg`} alt="428LAB BOOKS（仮）" />
+    </a>
+  </LogoElm>
+  <nav class="l-header-nav">
+    <ul>
+      {
+        !isIndex && (
+          <li>
+            <a href="/" class="l-header-anchor">
+              <i>
+                <img src="/images/common/icon-home.svg" alt="" />
+              </i>
+              <span>TOP</span>
+            </a>
+          </li>
+        )
+      }
+      <li>
+        <a href="/#NEW" class="l-header-anchor">
+          <i><img src="/images/common/icon-new.svg" alt="" /></i>
+          <span>新作</span>
+        </a>
+      </li>
+      <li>
+        <a href="/#BACKNO" class="l-header-anchor">
+          <i><img src="/images/common/icon-book.svg" alt="" /></i>
+          <span>既刊一覧</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>

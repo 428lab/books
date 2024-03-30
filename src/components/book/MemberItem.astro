@@ -1,0 +1,54 @@
+---
+import type { MemberItem } from "../../types/book"
+
+interface Props {
+  item: MemberItem
+}
+
+const { item } = Astro.props
+
+const isURL = (url: string) => {
+  const pattern = /^https?:\/\/[\w/:%#\$&\?\(\)~\.=\+\-]+$/
+  return pattern.test(url)
+}
+---
+
+<h3 class="c-member-head custom-font-color--secondary">{item.role}</h3>
+<div class="c-member-wrap">
+  {
+    item.member.map((mem) => (
+      <div class="c-member-unit">
+        <h4>{mem.name}</h4>
+        <ul>
+          {mem.url1 && isURL(mem.url1) ? (
+            <li>
+              <a href={mem.url1} target="_blank" rel="noopener">
+                {mem.url1}
+              </a>
+            </li>
+          ) : (
+            <li>{mem.url1}</li>
+          )}
+          {mem.url2 && isURL(mem.url2) ? (
+            <li>
+              <a href={mem.url2} target="_blank" rel="noopener">
+                {mem.url2}
+              </a>
+            </li>
+          ) : (
+            <li>{mem.url2}</li>
+          )}
+          {mem.url3 && isURL(mem.url3) ? (
+            <li>
+              <a href={mem.url3} target="_blank" rel="noopener">
+                {mem.url3}
+              </a>
+            </li>
+          ) : (
+            <li>{mem.url3}</li>
+          )}
+        </ul>
+      </div>
+    ))
+  }
+</div>

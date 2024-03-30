@@ -1,0 +1,466 @@
+{
+  "id": "001",
+  "title": "Hello Nostr!先住民が教えるNostrの歩き方",
+  "date": "2023-05-05T14:23:58+09:00",
+  "description": "この本はNostrが好きでたまらない人達が書いた本です。少しでもNostrに興味を持ったあなたも、この一冊を手に一緒にNostrを楽しみませんか？",
+  "h1": "Hello Nostr!<br>先住民が教えるNostrの歩き方",
+  "events": [
+    {
+      "eventName": "技術書典15",
+      "spaceNo": "あ05"
+    },
+    {
+      "eventName": "技術書典14",
+      "spaceNo": "う18"
+    }
+  ],
+  "price": "￥1,500",
+  "online_price": "￥1,000",
+  "online_set_price": "￥1,500",
+  "longDescription": "Twitterがイーロン・マスクによって買収されたことにより、Twitterの仕様がかつてないほどの激動を見せており、存続を危ぶむ声を各所で耳にするようになりました。<br>そこで、避難所として分散SNSの『Misskey』『Mastodon』『Bluesky』などが注目を浴びています。<br>そんな中、ひときわ異彩を放つ分散SNSのプロトコルがNostrです。<br><br>プロトコル？サービスではないの？<br>SNSなのに『異彩』というのはいったいどういうこと？<br>特殊なのにそこに集まる人とは一体？<br><br>この本はNostrが好きでたまらない人達が書いた本です。<br>あなたが感じた疑問に対する答え、解説をそんな私たちが頑張って書きました。<br>少しでもNostrに興味を持ったあなたも、この一冊を手に一緒にNostrを楽しみませんか？",
+  "market": [
+    {
+      "name": "技術書典マーケット",
+      "url": "https://techbookfest.org/product/veGeNq1tNkYFfWnZWgEC72"
+    },
+    {
+      "name": "BOOTH",
+      "url": "https://nostr-jp.booth.pm/items/4781815"
+    }
+  ],
+  "sales_start": "",
+  "samplePage": 5,
+  "index": [
+    {
+      "section": "01.Nostrの始め方",
+      "contents": [
+        "秘密鍵を作ろう！",
+        "プロフィールを整えよう！",
+        "日本リレーで遊ぼう！",
+        "クライアント紹介",
+        "おすすめのリレー",
+        "Lightning Networkを使った投げ銭機能（通称、Zap）の楽しみ方"
+      ]
+    },
+    {
+      "section": "02.Nostrの仕組み",
+      "contents": ["NIP-01を読む", "手を動かして学ぶ Nostrプロトコル", "リレーサーバーの概要", "bot開発体験記 in Nostr"]
+    },
+    {
+      "section": "03.Nostr村の歴史",
+      "contents": [
+        "村の歴史 - なぜ Nostr日本コミュニティが「村」と呼ばれるのか",
+        "関口現象",
+        "Made in 村？ 日本で生まれたサービスいろいろ",
+        "Botの紹介",
+        "jackから日本人への熱いラブコール",
+        "Nostr勉強会の歴史"
+      ]
+    },
+    {
+      "section": "04.Nostr Idol Project",
+      "contents": [
+        "Nostr Idol Project とは",
+        "Nostr Idol Project のひみつ",
+        "Nostr Idol Project 4コマ放送局",
+        "Nostr Idol Project 対話系bot",
+        "絵師が見たNostr～Nostrでの創作活動指南～"
+      ]
+    },
+    {
+      "section": "05.Nostr最新動向",
+      "contents": [
+        "Nostrica🇨🇷開催",
+        "fiatjafさんのコメント",
+        "jackさんのコメント",
+        "ジャック・ドーシーさん、日本人コミュニティの一端に触れる。",
+        "ジャック・ドーシーさん、日本人たちと🫂を交わす。",
+        "Nostrasia開催決定！"
+      ]
+    }
+  ],
+  "member": [
+    {
+      "role": "プロデューサー",
+      "member": [
+        {
+          "name": "Shino3",
+          "url1": "https://potofu.me/shino3",
+          "url2": "https://twitter.com/SHINOHARATTT"
+        }
+      ]
+    },
+    {
+      "role": "筆者",
+      "member": [
+        {
+          "name": "darashi",
+          "url1": "https://darashi.net",
+          "url2": "[Nostr / NIP-05] _@darashi.net"
+        },
+        {
+          "name": "U.G.M.",
+          "url1": "https://circle-ay.info",
+          "url2": "[Nostr / NIP-05] _@circle-ay.info"
+        },
+        {
+          "name": "yutaro",
+          "url1": "https://stacksats.jp",
+          "url2": "[Nostr / NIP-05] yutaro@nostrplebs.com"
+        },
+        {
+          "name": "かすてらふぃ",
+          "url1": "https://c-stellar.net",
+          "url2": "[Nostr / NIP-05] jiftechnify@c-stellar.net"
+        },
+        {
+          "name": "こじら",
+          "url1": "https://bit.ly/kojira-nostr",
+          "url2": "https://www.youtube.com/@kojiranran"
+        },
+        {
+          "name": "つるるん",
+          "url1": "https://ROBO358.com",
+          "url2": "[Nostr / NIP-05] _@ROBO358.com"
+        },
+        {
+          "name": "てすら"
+        },
+        {
+          "name": "電子馬",
+          "url1": "https://erechorse.com",
+          "url2": "[Nostr / NIP-05] _@erechorse.com"
+        }
+      ]
+    },
+    {
+      "role": "イラストレーター",
+      "member": [
+        {
+          "name": "青ぎ",
+          "url1": "https://yawarakaizon.com/top",
+          "url2": "[Nostr / NIP-05] aogi@nosutora.com"
+        },
+        {
+          "name": "あわゆき",
+          "url1": "https://awayuki.net/con/",
+          "url2": "[Nostr / NIP-05] awayuki@awayuki.net"
+        },
+        {
+          "name": "崇徳",
+          "url1": "https://potofu.me/stok33",
+          "url2": "[Nostr / NIP-05] stok33@nosutora.com"
+        },
+        {
+          "name": "みりめい",
+          "url1": "https://millie-may.net",
+          "url2": "[Nostr / NIP-05] kawaiirailroads@millie-may.net"
+        },
+        {
+          "name": "しおん",
+          "url1": "https://potofu.me/shion72",
+          "url2": "[Nostr / NIP-05] _@nostr-shion72.pages.dev"
+        },
+        {
+          "name": "ゆうひまわり",
+          "url1": "https://www.pixiv.net/users/193378",
+          "url2": "[Nostr / NIP-05] yuuhimawari@yuuhimawariero.net"
+        }
+      ]
+    },
+    {
+      "role": "Webサイト",
+      "member": [
+        {
+          "name": "クコ",
+          "url1": "https://cuconoki.net/",
+          "url2": "[Nostr / NIP-05] cuconoki@cuconoki.net"
+        }
+      ]
+    },
+    {
+      "role": "デザイナー・DTP",
+      "member": [
+        {
+          "name": "よそいち",
+          "url1": "https://sksksketch.net/",
+          "url2": "［Nostr / NIP-05］yosoichi@sksksketch.net"
+        }
+      ]
+    }
+  ],
+  "link": [
+    {
+      "name": "Damus",
+      "url": "https://apps.apple.com/jp/app/damus/id1628663131",
+      "page": 26
+    },
+    {
+      "name": "Amethyst",
+      "url": "https://play.google.com/store/apps/details?id=com.vitorpamplona.amethyst&hl=ja&gl=US",
+      "page": 28
+    },
+    {
+      "name": "Iris",
+      "url": "https://iris.to/",
+      "page": 30
+    },
+    {
+      "name": "Snort",
+      "url": "https://snort.social/",
+      "page": 32
+    },
+    {
+      "name": "Astraea",
+      "url": "https://astraea.mousedev.page/",
+      "page": 34
+    },
+    {
+      "name": "nostter",
+      "url": "https://nostter.vercel.app/",
+      "page": 36
+    },
+    {
+      "name": "Rabbit",
+      "url": "https://syusui-s.github.io/rabbit/",
+      "page": 38
+    },
+    {
+      "name": "BBS on Nostr",
+      "url": "https://bbs-on-nostr.vercel.app/",
+      "page": 40
+    },
+    {
+      "name": "GARNET",
+      "url": "https://garnet.nostrian.net/",
+      "page": 42
+    },
+    {
+      "name": "Nostr Feeds",
+      "url": "https://relay-jp.nostr.wirednet.jp/index.html",
+      "page": 44
+    },
+    {
+      "name": "Wallet of Satoshi",
+      "url": "https://stacksats.jp/wallet-of-satoshi/",
+      "page": 54
+    },
+    {
+      "name": "Alby",
+      "url": "https://stacksats.jp/alby/",
+      "page": 54
+    },
+    {
+      "name": "STACK SATS",
+      "url": "https://stacksats.jp",
+      "page": 56
+    },
+    {
+      "name": "NIPs",
+      "url": "https://github.com/nostr-protocol/nips",
+      "page": 60
+    },
+    {
+      "name": "nostr - Notes and Other Stuff Transmitted by Relays",
+      "url": "https://github.com/nostr-protocol/nostr",
+      "page": 60
+    },
+    {
+      "name": "NIP-01 原文",
+      "url": "https://github.com/nostr-protocol/nips/blob/master/01.md",
+      "page": 61
+    },
+    {
+      "name": "Schnorr signatures standard for the curve `secp256k1`",
+      "url": "https://bips.xyz/340",
+      "page": 61
+    },
+    {
+      "name": "手を動かして学ぶ Nostrプロトコル 演習環境",
+      "url": "https://github.com/nostr-jp/learn-nostr-by-crafting",
+      "page": 65
+    },
+    {
+      "name": "nostr-tools",
+      "url": "https://github.com/nbd-wtf/nostr-tools",
+      "page": 68
+    },
+    {
+      "name": "Nostr.Band",
+      "url": "https://nostr.band/",
+      "page": 86
+    },
+    {
+      "name": "Nosaray",
+      "url": "https://nosaray.vercel.app",
+      "page": 86
+    },
+    {
+      "name": "Nosli",
+      "url": "https://nosli.vercel.app",
+      "page": 86
+    },
+    {
+      "name": "NostrFlu",
+      "url": "https://heguro.github.io/nostr-following-list-util/",
+      "page": 91
+    },
+    {
+      "name": "Scrapbox",
+      "url": "https://scrapbox.io/nostr/",
+      "page": 92
+    },
+    {
+      "name": "のすとら！",
+      "url": "https://nosutora.com",
+      "page": 92
+    },
+    {
+      "name": "Astraea",
+      "url": "https://astraea.mousedev.page",
+      "page": 92
+    },
+    {
+      "name": "BBS on Nostr",
+      "url": "https://bbs-on-nostr.vercel.app/",
+      "page": 92
+    },
+    {
+      "name": "nostrbbs",
+      "url": "https://test.ikeji.ma/nostrbbs/",
+      "page": 92
+    },
+    {
+      "name": "Nostr検索ポータル",
+      "url": "https://nostr.hoku.in",
+      "page": 93
+    },
+    {
+      "name": "searchnos",
+      "url": "https://github.com/darashi/searchnos",
+      "page": 93
+    },
+    {
+      "name": "nostrbuzzs",
+      "url": "https://nostrbuzzs.deno.dev",
+      "page": 93
+    },
+    {
+      "name": "Nostrends",
+      "url": "https://nostrends.vercel.app",
+      "page": 93
+    },
+    {
+      "name": "nostr: post checker",
+      "url": "https://koteitan.github.io/nostr-post-checker/",
+      "page": 93
+    },
+    {
+      "name": "NostrFlu",
+      "url": "https://heguro.github.io/nostr-following-list-util/",
+      "page": 93
+    },
+    {
+      "name": "#illust tagged notes on Nostr",
+      "url": "https://nostr-illust.vercel.app",
+      "page": 93
+    },
+    {
+      "name": "Nosli",
+      "url": "https://nosli.vercel.app",
+      "page": 93
+    },
+    {
+      "name": "NosTx",
+      "url": "https://nostx.shino3.net",
+      "page": 93
+    },
+    {
+      "name": "Nosaray",
+      "url": "https://nosaray.vercel.app",
+      "page": 93
+    },
+    {
+      "name": "Nostr 村放送局 nostradio",
+      "url": "https://nostradio.deno.dev",
+      "page": 94
+    },
+    {
+      "name": "murasaki",
+      "url": "https://github.com/darashi/murasaki",
+      "page": 94
+    },
+    {
+      "name": "GARNET",
+      "url": "https://garnet.nostrian.net",
+      "page": 94
+    },
+    {
+      "name": "nothello",
+      "url": "https://nothello.studiokaiji.com/",
+      "page": 94
+    },
+    {
+      "name": "Algia",
+      "url": "https://github.com/mattn/algia",
+      "page": 94
+    },
+    {
+      "name": "nostter",
+      "url": "https://nostter.vercel.app/",
+      "page": 94
+    },
+    {
+      "name": "rabbit",
+      "url": "https://syusui-s.github.io/rabbit//hello",
+      "page": 94
+    },
+    {
+      "name": "Nostr Feeds from relay-jp.nostr.wirednet.jp.",
+      "url": "https://relay-jp.nostr.wirednet.jp/",
+      "page": 94
+    },
+    {
+      "name": "nostr-jp/awesome-nostr-japan",
+      "url": "https://github.com/nostr-jp/awesome-nostr-japan",
+      "page": 94
+    },
+    {
+      "name": "#illust tagged notes on Nostr",
+      "url": "https://nostr-illust.vercel.app/",
+      "page": 121
+    },
+    {
+      "name": "fiatjafさんのコメント",
+      "url": "https://nostx.shino3.net/note1w5z2hjzwew695xz60xf6ssecustmhr54m65uj9xgeuge0tv0jmrqd8l858",
+      "page": 126
+    },
+    {
+      "name": "jackさんのコメント",
+      "url": "https://nostx.shino3.net/note136lydhu9yxe2gwuqkj94fzc47cemtndz562yxwg3he2p44sv9qdsgl7jhf",
+      "page": 126
+    },
+    {
+      "name": "ジャック・ドーシーさん、日本人コミュニティの一端に触れる。",
+      "url": "https://nostx.shino3.net/note1km8hv7ym6fw3r6h6vhfgc9kavsq9dyvlwqcer2sxvxw9kg0hxt3stry02u",
+      "page": 127
+    },
+    {
+      "name": "ジャック・ドーシーさん、日本人たちと🫂を交わす。",
+      "url": "https://nostx.shino3.net/note1xsze0hw4x4t4ee7mk6lehpkqarxe6t67jcxxwql4q0vhthuc95jqky43mq",
+      "page": 128
+    }
+  ],
+  "errata": [
+    {
+      "target": "P51『Broadcast機能』2行目",
+      "error": "プロフィール情報や投稿などが多くのユーザに知られることができます。",
+      "correct": "多くのユーザにプロフィール情報や投稿などを届けることができます。"
+    },
+    {
+      "target": "P51『Broadcast機能』4行目",
+      "error": "ユーザのプロフィール情報や投稿が恐れが少なくなります。",
+      "correct": "ユーザのプロフィール情報や投稿が見れなくなる恐れを減らせます。"
+    }
+  ]
+}

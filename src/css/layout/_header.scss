@@ -1,0 +1,76 @@
+@use "../foundation/global" as *;
+
+.l-header {
+  background-color: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  @include bp(sm) {
+    display: block;
+  }
+}
+
+.l-header-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px;
+  @include bp(sm) {
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  img {
+    height: 34px;
+    width: auto;
+  }
+}
+.l-header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  ul {
+    display: flex;
+    gap: 30px;
+    background-color: $c-secondary;
+    padding: 10px 30px;
+    border-radius: 30px 0 0 30px;
+    @include bp(md) {
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 10px 10px 30px;
+    }
+
+    li {
+      border-left: 1px solid $c-secondary;
+      @include bp(sm) {
+        flex-grow: 1;
+        &:first-child {
+          border-left: none;
+        }
+      }
+    }
+  }
+}
+.l-header-anchor {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  box-sizing: border-box;
+  color: $c-accent;
+  @include font-noto-sans;
+  font-weight: 700;
+  transition: all 0.4s;
+  @include hover {
+    background-color: $c-secondary;
+    color: #fff;
+  }
+  i {
+    width: 1.5em;
+    height: 1.5em;
+    img {
+      width: 100%;
+    }
+  }
+}

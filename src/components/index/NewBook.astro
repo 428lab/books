@@ -1,0 +1,95 @@
+---
+import type { Book } from "../../types/book"
+import Sample from "../book/Sample.astro"
+
+interface Props {
+  book: Book
+}
+
+const { book } = Astro.props
+---
+
+<div class="c-new-item">
+  <div class="c-new-item__body">
+    <div class="c-new-media">
+      <img src={`/images/book/${book.id}/cover.webp`} alt="" />
+      {book.samplePage && <div class="c-new-sample"><Sample book={book} /></div>}
+    </div>
+    <div class="c-new-detail">
+      <h3 class="c-new-title">
+        <Fragment set:html={book.h1} />
+      </h3>
+      {
+        book.events &&
+          book.events.map((item) => (
+            <dl class="c-new-event">
+              <dt>{item.eventName}</dt>
+              <dd>{item.spaceNo}</dd>
+            </dl>
+          ))
+      }
+
+      {
+        book.price && (
+          <dl class="c-new-price">
+            <dt>頒布価格：</dt>
+            <dd>{book.price}</dd>
+          </dl>
+        )
+      }
+      <div class="c-new-digital">
+        {
+          book.online_price && (
+            <dl class="c-new-digital__price">
+              <dt>電子版：</dt>
+              <dd>{book.online_price}</dd>
+            </dl>
+          )
+        }
+        {
+          book.online_set_price && (
+            <dl class="c-new-digital__price">
+              <dt>電子版＋紙：</dt>
+              <dd>{book.online_set_price}</dd>
+            </dl>
+          )
+        }
+      </div>
+      {
+        book.market && (
+          <div class="c-new-online">
+            <h4 class="c-new-online__head">オンライン頒布</h4>
+            <ul class="c-new-online__lineup">
+              {book.market.map((item) => (
+                <li>
+                  <a
+                    href={item.url || ""}
+                    target="_blank"
+                    rel="noopener"
+                    class={item.url ? "c-new-online__btn" : "c-new-online__btn c-new-online__btn--disabled"}
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )
+      }
+
+      {book.sales_start && <p class="c-new-sales">{book.sales_start}</p>}
+
+      {
+        book.description && (
+          <p class="c-new-caption">
+            <Fragment set:html={book.description} />
+          </p>
+        )
+      }
+      <div class="c-new-link">
+        <a href={`/book/${book.id}`} class="c-new-link__btn">本の詳細はこちら</a>
+      </div>
+      
+    </div>
+  </div>
+</div>

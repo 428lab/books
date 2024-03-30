@@ -1,0 +1,245 @@
+@use "../../foundation/global" as *;
+
+.c-new-item {
+  display: flex;
+  margin-top: 20px;
+  &::before {
+    content: "";
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: transparent;
+    min-width: 20px;
+    @include bp(sm) {
+      min-width: 10px;
+    }
+  }
+  &::after {
+    content: "";
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: #fff;
+    min-width: 20px;
+    border-top: 5px solid $c-secondary;
+    border-bottom: 5px solid $c-secondary;
+    @include bp(sm) {
+      min-width: 10px;
+    }
+  }
+  &__body {
+    max-width: 940px;
+    background-color: #fff;
+    border-radius: 20px 0 0 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-top: 5px solid $c-secondary;
+    border-bottom: 5px solid $c-secondary;
+    border-left: 5px solid $c-secondary;
+
+    @include bp(tab) {
+      display: block;
+      max-width: 520px;
+    }
+  }
+}
+.c-new-item:nth-child(odd) {
+  &::before {
+    background-color: #fff;
+    border-top: 5px solid $c-secondary;
+    border-bottom: 5px solid $c-secondary;
+  }
+  &::after {
+    content: "";
+    background-color: transparent;
+    border-top: none;
+    border-bottom: none;
+
+  }
+  .c-new-item {
+    &__body {
+      border-radius: 0 20px 20px 0;
+      flex-direction: row-reverse;
+      border-right: 5px solid $c-secondary;
+      border-left: none;
+    }
+  }
+}
+.c-new-media {
+  width: 40%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  @include bp(tab) {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+    @include bp(tab) {
+      max-width: 375px;
+    }
+  }
+}
+.c-new-sample {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 20px;
+}
+.c-new-detail {
+  width: 65%;
+  box-sizing: border-box;
+  padding: 20px;
+  @include bp(tab) {
+    width: 100%;
+  }
+  @include bp(sm) {
+    padding: 20px 10px;
+  }
+}
+
+.c-new-title {
+  @include font-noto-sans;
+  font-weight: 500;
+  font-size: $font-size-lg;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+.c-new-event {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  dt {
+    background-color: $c-secondary;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: #fff;
+  }
+  dd {
+    color: $c-secondary;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+.c-new-price {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-items: center;
+  dt {
+    @include font-noto-sans;
+    font-weight: 600;
+  }
+  dd {
+    @include font-noto-sans;
+    font-weight: 600;
+    color: #000;
+    font-size: $font-size-md;
+  }
+}
+.c-new-digital {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 20px;
+  &__price {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    align-items: center;
+    dt {
+      @include font-noto-sans;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    dd {
+      @include font-noto-sans;
+      font-weight: 600;
+      color: #000;
+      font-size: $font-size-md;
+      font-size: 16px;
+    }
+  }
+}
+.c-new-online {
+  margin-top: 20px;
+  &__head {
+    color: $c-secondary;
+  }
+  &__lineup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    margin-top: 4px;
+  }
+  &__btn {
+    background-color: $c-primary;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.5em 1.5em;
+    display: inline-block;
+    border-radius: 1.2em;
+    transition: all 0.4s;
+    font-size: 14px;
+    @include hover {
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+    &--disabled {
+      pointer-events: none;
+      background-color: #ccc;
+    }
+  }
+}
+.c-new-sales {
+  padding: 0 0 0 1.2em;
+  margin: 4px 0 0;
+  font-size: 14px;
+  position: relative;
+  &::before {
+    content: "※";
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+.c-new-caption {
+  margin-top: 20px;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  letter-spacing: 0;
+  font-weight: bold;
+}
+.c-new-link {
+  margin-top: 20px;
+  text-align: center;
+  &__btn {
+    background-color: $c-primary;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.5em 1.5em;
+    display: inline-block;
+    border-radius: 1.2em;
+    transition: all 0.4s;
+    font-size: 18px;
+    @include hover {
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}

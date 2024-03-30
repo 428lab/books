@@ -1,0 +1,30 @@
+---
+import type { NewsProps } from "../../types/news"
+
+interface CustomDataFile {
+  default: NewsProps[];
+}
+
+const newsItems = await Astro.glob<CustomDataFile>("../../content/news.json")
+
+const news = newsItems[0].default
+
+---
+
+<div class="c-news">
+  <h2 class="c-news-head">
+    <span class="c-news-head__main">News</span>
+    <span class="c-news-head__sub">お知らせ</span>
+  </h2>
+  <div class="c-news-list">
+    {
+      news &&
+        news.map((item) => (
+          <a href={item.href ? item.href : ""} class={item.href ? "c-news-item" : "c-news-item c-news-item--disabled"}>
+            <span class="c-news-item__date">{item.date}</span>
+            <span class="c-news-item__body">{item.body}</span>
+          </a>
+        ))
+    }
+  </div>
+</div>

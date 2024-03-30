@@ -1,0 +1,102 @@
+@use "../../foundation/global" as *;
+
+.p-index-wrap {
+  box-sizing: border-box;
+  padding: 0 0 40px 0px;
+  @include bp(md) {
+    padding: 0 0 30px 0px;
+  }
+  @include bp(sm) {
+    padding: 0 0 20px 0px;
+  }
+}
+
+.p-index-hero {
+  padding: 20px;
+  @include bp(md) {
+    padding: 0 0px;
+  }
+  &__body {
+    max-width: 1080px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      border-radius: 20px;
+      @include bp(md) {
+        border-radius: 0px;
+      }
+    }
+  }
+}
+
+.p-index-news {
+  margin-top: 40px;
+  padding: 0 40px;
+  @include bp(md) {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+}
+
+.p-index-new {
+  margin-top: 60px;
+}
+
+.p-index-new-head {
+  padding: 0;
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
+  align-items: center;
+  &__sub {
+    @include font-noto-sans;
+    font-weight: 400;
+    background-color: $c-primary;
+    color: #fff;
+    padding: 2px 1em;
+    line-height: 1;
+    font-size: $font-size-sm;
+  }
+  &__main {
+    @include font-montserrat;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 1;
+    color: #000;
+    text-align: center;
+  }
+}
+
+
+.p-index-backno {
+  margin-top: 80px;
+  padding: 0 20px;
+  @include bp(sm){
+    padding: 0 10px;
+  }
+}
+
+.p-index-backno-head {
+  padding: 0;
+  display: flex;
+  gap: 6px;
+  flex-direction: column;
+  align-items: center;
+  &__sub {
+    @include font-noto-sans;
+    font-weight: 400;
+    background-color: $c-primary;
+    color: #fff;
+    padding: 2px 1em;
+    line-height: 1;
+    font-size: $font-size-sm;
+  }
+  &__main {
+    @include font-montserrat;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1;
+    color: #000;
+    text-align: center;
+  }
+}

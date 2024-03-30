@@ -1,0 +1,198 @@
+---
+import Layout from "../../layouts/Layout.astro"
+import Sample from "../../components/book/Sample.astro"
+import Market from "../../components/book/Market.astro"
+import IndexItem from "../../components/book/IndexItem.astro"
+import MemberItem from "../../components/book/MemberItem.astro"
+import Header from "../../components/Header.astro"
+
+import type { Book } from "../../types/book"
+
+// 全書籍JSONから個別ページのパスと値を取得
+export async function getStaticPaths() {
+  
+  const books: Book[] = await Astro.glob("../../content/book/*.json")
+  return books.map((book) => {
+    return {
+      params: { id: book.id },
+      props: { book },
+    }
+  })
+}
+
+interface Props {
+  book: Book
+}
+
+const { id } = Astro.params
+const { book } = Astro.props
+---
+
+<Layout title={book.title} description={book.description} ogp={book.ogp}>
+  <Header isIndex={false} />
+  <div class="p-book-wrap">
+    <div class="c-book-block">
+      <div class="c-book-block__cover">
+        <img src={`/images/book/${id}/cover.webp`} alt="" />
+        {book.samplePage && <Sample book={book} />}
+      </div>
+      <div class="c-book-block__info">
+        <ul class="c-book-block__share">
+          <li>
+            <a
+              href={"https://twitter.com/intent/tweet?text=" +
+                encodeURIComponent(`${book.title} https://books.428lab.net/book/${id}`)}
+              target="_blank"><img src="/images/common/icon-x.svg" alt="Xでシェア" /></a
+            >
+          </li>
+          <li>
+            <a href={`https://www.facebook.com/sharer/sharer.php?u=https://books.428lab.net/book/${id}`} target="_blank"
+              ><img src="/images/common/icon-facebook.svg" alt="Facebookでシェア" /></a
+            >
+          </li>
+        </ul>
+        <h1 class="c-book-block__title">
+          <Fragment set:html={book.h1} />
+        </h1>
+        {
+          book.events &&
+            book.events.map((item) => (
+              <dl class="c-book-event">
+                <dt class="custom-bg-color--primary">{item.eventName}</dt>
+                <dd class="custom-font-color--primary">{item.spaceNo}</dd>
+              </dl>
+            ))
+        }
+
+        {
+          book.price && (
+            <dl class="c-book-price">
+              <dt>頒布価格</dt>
+              <dd>{book.price}</dd>
+            </dl>
+          )
+        }
+
+        {
+          book.online_price && (
+            <dl class="c-book-price c-book-price--digital">
+              <dt>電子版</dt>
+              <dd>{book.online_price}</dd>
+            </dl>
+          )
+        }
+        {
+          book.online_set_price && (
+            <dl class="c-book-price c-book-price--digital">
+              <dt>電子版＋紙</dt>
+              <dd>{book.online_set_price}</dd>
+            </dl>
+          )
+        }
+        {
+          book.market && (
+            <div class="c-book-online">
+              <h2 class="c-book-online__head">オンライン</h2>
+              <ul class="c-book-online__lineup">
+                <Market items={book.market} />
+              </ul>
+            </div>
+          )
+        }
+
+        {book.sales_start && <p class="c-book-sales">{book.sales_start}</p>}
+      </div>
+
+      {
+        book.longDescription && (
+          <div class="c-book-block__detail">
+            <p class="c-book-caption">
+              <Fragment set:html={book.longDescription} />
+            </p>
+          </div>
+        )
+      }
+
+      {
+        book.index && (
+          <div class="c-book-index">
+            <h2 class="c-book-head">
+              <span class="c-book-head__main">Index</span>
+              <span class="c-book-head__sub">目次</span>
+            </h2>
+            <div class="c-book-index__items">
+              {book.index.map((item) => (
+                <IndexItem item={item} />
+              ))}
+            </div>
+          </div>
+        )
+      }
+
+      {
+        book.member && (
+          <div class="c-book-member">
+            <h2 class="c-book-head">
+              <span class="c-book-head__main">Writers</span>
+              <span class="c-book-head__sub">書いた人たち</span>
+            </h2>
+            <div class="c-book-member__items">
+              {book.member.map((item) => (
+                <MemberItem item={item} />
+              ))}
+            </div>
+          </div>
+        )
+      }
+
+      {
+        book.link && (
+          <div class="c-book-link">
+            <h2 class="c-book-head">
+              <span class="c-book-head__main">Link</span>
+              <span class="c-book-head__sub">本誌内で紹介したサイト一覧</span>
+            </h2>
+            <div class="c-book-link__items">
+              {book.link.map((item) => (
+                <a href={item.url} target="_blank" rel="noopener">
+                  <dl>
+                    <dt>P.{item.page}</dt>
+                    <dd>
+                      <span>{item.name}</span>
+                    </dd>
+                  </dl>
+                </a>
+              ))}
+            </div>
+          </div>
+        )
+      }
+
+      {
+        book.errata && (
+          <div class="c-book-errata">
+            <h2 class="c-book-head">
+              <span class="c-book-head__main">Errata</span>
+              <span class="c-book-head__sub">正誤情報</span>
+            </h2>
+            <div class="c-book-errata__items">
+              {book.errata.map((item) => (
+                <dl class="c-book-errata__unit">
+                  <dt>{item.target}</dt>
+                  <dd class="c-book-errata__error">
+                    <span>誤</span>
+                    <span>{item.error}</span>
+                  </dd>
+                  <dd class="c-book-errata__correct">
+                    <span>正</span>
+                    <span>{item.correct}</span>
+                  </dd>
+                </dl>
+              ))}
+            </div>
+          </div>
+        )
+      }
+    </div>
+  </div>
+</Layout>

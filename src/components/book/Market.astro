@@ -1,0 +1,24 @@
+---
+import type { MarketItem } from "../../types/book"
+
+interface Props {
+  items: MarketItem[]
+}
+
+const { items } = Astro.props
+---
+
+{
+  items.map((item) => (
+    <li>
+      <a
+        href={item.url || ""}
+        target="_blank"
+        rel="noopener"
+        class={item.url ? "c-book-online__btn" : "c-book-online__btn c-book-online__btn--disabled"}
+      >
+        {item.name}
+      </a>
+    </li>
+  ))
+}

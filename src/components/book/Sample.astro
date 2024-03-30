@@ -1,0 +1,99 @@
+---
+import type { Book } from "../../types/book"
+
+interface Props {
+  book: Book
+}
+
+const { book } = Astro.props
+
+const sampleArray = () => {
+  let values: number[] = []
+  if (book.samplePage) {
+    for (let i = 1; book.samplePage >= i; i++) {
+      values.push(i)
+    }
+  }
+  return values
+}
+
+const sampleVals = sampleArray()
+---
+
+<astro-modal>
+  <div class="swiperModalButton">
+    <button class="modalOpen">紙面サンプル</button>
+  </div>
+
+  <div class="modal">
+    <div class="modal__overlay modalClose"></div>
+    <div class="modal__content">
+      <div class="modal_inner">
+        <div class="modal__close-btn modalClose" aria-label="閉じる"><span class="lineClose"></span></div>
+        <!-- スライダー -->
+        <div class="swiper modalInSlider">
+          <div class="swiper-wrapper">
+            {
+              sampleVals.map((val) => (
+                <div class="swiper-slide modalInSlider">
+                  <p class="swiperBody">
+                    <img src={`/images/book/${book.id}/${val}.webp`} alt="" />
+                  </p>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</astro-modal>
+<script>
+  import Swiper from "swiper"
+  import { Navigation } from "swiper/modules"
+  import "swiper/css/bundle"
+
+  // 新しいタイプのHTML要素の動作を定義する
+  class AstroModal extends HTMLElement {
+    constructor() {
+      super()
+
+      // モーダルを取得
+      const modal = this.querySelector(".modal")
+      // モーダルを開く
+      const openModalBtns = this.querySelectorAll(".modalOpen")
+      // モーダルを閉じる
+      const closeModalBtns = this.querySelectorAll(".modalClose")
+
+      // Swiperの設定
+      new Swiper(".swiper", {
+        modules: [Navigation],
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        spaceBetween: 10, //任意のマージン
+      })
+
+      // モーダルのボタンクリック
+      openModalBtns.forEach((openModalBtn) => {
+        openModalBtn.addEventListener("click", () => {
+          modal && modal.classList.add("is-active")
+        })
+      })
+
+      // モーダルの閉じるボタンクリック
+      closeModalBtns.forEach((closeModalBtn) => {
+        closeModalBtn.addEventListener("click", () => {
+          modal && modal.classList.remove("is-active")
+        })
+      })
+    }
+  }
+
+  // <astro-heart>要素としてAstroHeartクラスを利用することをブラウザに教える
+  customElements.define("astro-modal", AstroModal)
+</script>

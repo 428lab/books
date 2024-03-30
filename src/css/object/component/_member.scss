@@ -1,0 +1,70 @@
+@use "../../foundation/global" as *;
+
+.c-member-head {
+  padding: 0;
+  margin: 40px 0 0;
+  color: $c-primary;
+  @include font-noto-sans;
+  font-weight: bold;
+}
+
+.c-member-wrap {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  @include bp(md) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.c-member-unit {
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 4px;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 3px solid #eee;
+  box-sizing: border-box;
+  border-radius: 10px;
+  @include bp(tab) {
+    width: 100%;
+  }
+  h4 {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    @include font-noto-sans;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    padding: 0;
+    margin: 0.5rem 0 0;
+    font-size: 14px;
+    word-break: break-all;
+    a {
+      &:link {
+        text-decoration: none;
+        color: $text-link;
+      }
+      &:visited {
+        text-decoration: none;
+        color: $text-link;
+      }
+      &:hover {
+        text-decoration: underline;
+        color: $text-link;
+      }
+      &:active {
+        text-decoration: none;
+        color: $text-link;
+      }
+    }
+  }
+}

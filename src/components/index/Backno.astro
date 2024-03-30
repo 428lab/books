@@ -1,0 +1,24 @@
+---
+import type { Book } from "../../types/book"
+
+interface Props {
+  book: Book
+}
+
+const { book } = Astro.props
+---
+<a href={`/book/${book.id}`} class="c-backno-item">
+  <div class="c-backno-media">
+    <img src={`/images/book/${book.id}/cover.webp`} alt="" />
+  </div>
+  <div class="c-backno-detail">
+    <h3 class="c-backno-title">{book.title}</h3>
+    {book.market && <p class="c-backno-online">オンライン頒布あり</p>}
+    <p class="c-backno-desc">{book.description}</p>
+    <div class="c-backno-link">
+      <span class="c-backno-link__btn">
+        本の詳細はこちら
+      </span>
+    </div>
+  </div>
+</a>

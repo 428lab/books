@@ -1,0 +1,24 @@
+@use "../../foundation/global" as *;
+
+.p-book-wrap {
+  box-sizing: border-box;
+  padding: 0px 60px;
+  @include bp(md) {
+    padding: 0px 40px;
+  }
+  @include bp(sm) {
+    padding: 0px 10px;
+  }
+}
+.p-book-visual{
+  line-height: 0;
+  figure{
+    margin: 0;
+    padding: 0;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+

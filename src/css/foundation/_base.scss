@@ -1,0 +1,89 @@
+@use "global" as g;
+
+* {
+  zoom: 1;
+}
+.clearfix:after,
+.cf:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: g.$text-primary;
+}
+
+.page-wrap {
+  position: relative;
+}
+
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+dl,
+dt,
+dd,
+body {
+  font-family: YakuHanJPs_Narrow, AdjustedYuGothic, Yu Gothic, YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Sans",
+    "BIZ UDPGothic", Meiryo, "Helvetica Neue", Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-feature-settings: "palt";
+}
+
+.mincho {
+  font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS明朝E, serif;
+}
+p {
+  line-height: 1.8em;
+  letter-spacing: 0.05em;
+}
+ul {
+  list-style: none;
+}
+
+/*----------------------------*/
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}

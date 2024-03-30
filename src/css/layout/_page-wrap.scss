@@ -1,0 +1,13 @@
+@use "../foundation/global" as *;
+
+.page-wrap {
+  background-image: url(/images/common/bg.webp);
+  border: 30px solid $c-secondary;
+  box-sizing: border-box;
+  @include bp(tab) {
+    border: 20px solid $c-secondary;
+  }
+  @include bp(sp) {
+    border: 5px solid $c-secondary;
+  }
+}

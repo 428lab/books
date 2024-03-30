@@ -1,0 +1,66 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Header from "../components/Header.astro"
+import News from "../components/index/News.astro"
+import NewBook from "../components/index/NewBook.astro"
+import Backno from "../components/index/Backno.astro"
+
+import type { IndexProps } from "../types/index"
+import type { Book } from "../types/book"
+
+interface IndexDataFile {
+  default: IndexProps
+}
+const indexProps = await Astro.glob<IndexDataFile>("../content/index.json")
+
+const { newBookNum, mainVisualPC, mainVisualSP, mainVisualHref } = indexProps[0].default
+
+// 全書籍データ取得
+
+interface BookDataFile {
+  default: Book
+}
+const books = await Astro.glob<BookDataFile>("../content/book/*.json")
+books.reverse()
+
+// 旧作と配列を分ける
+const oldBooks = books.splice(newBookNum)
+---
+
+<Layout>
+  <Header isIndex={true} />
+  <div class="p-index-wrap">
+    <div class="p-index-hero">
+      <div class="p-index-hero__body">
+        <a href={mainVisualHref}>
+          <picture>
+            <source media="(max-width: 768px)" srcset={mainVisualSP} />
+            <img src={mainVisualPC} alt="" />
+          </picture>
+        </a>
+      </div>
+    </div>
+
+    <div class="p-index-news" id="NEWS">
+      <News />
+    </div>
+
+    <div class="p-index-new" id="NEW">
+      <h2 class="p-index-new-head">
+        <span class="p-index-new-head__main">New Arrivals</span>
+        <span class="p-index-new-head__sub">新作</span>
+      </h2>
+      {books.map((book) => <NewBook book={book.default} />)}
+    </div>
+
+    <div class="p-index-backno" id="BACKNO">
+      <h2 class="p-index-backno-head">
+        <span class="p-index-backno-head__main">Already Published</span>
+        <span class="p-index-backno-head__sub">既刊一覧</span>
+      </h2>
+      <div class="c-backno">
+        {oldBooks.map((book) => <Backno book={book.default} />)}
+      </div>
+    </div>
+  </div>
+</Layout>

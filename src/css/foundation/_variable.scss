@@ -1,0 +1,16 @@
+// sm:0.8rem 13px / 0.75rem 12px
+$font-size-sm: clamp(0.8rem, -0.09vw + 0.82rem, 0.75rem);
+// base:1rem 16px / 1rem 16px
+$font-size-base: clamp(1rem, 0vw + 1rem, 1rem);
+// md:1.25rem 20px / 1.33rem 21px
+$font-size-md: clamp(1.25rem, 0.15vw + 1.21rem, 1.33rem);
+// lg:1.56rem 25px / 1.78rem 28px
+$font-size-lg: clamp(1.56rem, 0.39vw + 1.47rem, 1.78rem);
+// xl:1.95rem 31px / 2.37rem 38px
+$font-size-xl: clamp(1.95rem, 0.76vw + 1.76rem, 2.37rem);
+// xxl:2.44rem 39px / 3.16rem 50px
+$font-size-xxl: clamp(2.44rem, 1.3vw + 2.12rem, 3.16rem);
+// xxxl:3.05rem 49px / 4.21rem 67px
+$font-size-xxxl: clamp(3.05rem, 2.1vw + 2.53rem, 4.21rem);
+
+$font-size-note: 14px;
