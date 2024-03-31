@@ -5,6 +5,8 @@ import Market from "../../components/book/Market.astro"
 import IndexItem from "../../components/book/IndexItem.astro"
 import MemberItem from "../../components/book/MemberItem.astro"
 import Header from "../../components/Header.astro"
+import { SiteName } from '../../config/siteState'
+
 
 import type { Book } from "../../types/book"
 
@@ -26,6 +28,10 @@ interface Props {
 
 const { id } = Astro.params
 const { book } = Astro.props
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
+const shareText = encodeURI(`${book.title} | ${SiteName}\n${canonicalURL}`)
+
 ---
 
 <Layout title={book.title} description={book.description} ogp={book.ogp}>
@@ -37,20 +43,63 @@ const { book } = Astro.props
         {book.samplePage && <Sample book={book} />}
       </div>
       <div class="c-book-block__info">
-        <ul class="c-book-block__share">
-          <li>
-            <a
-              href={"https://twitter.com/intent/tweet?text=" +
-                encodeURIComponent(`${book.title} https://books.428lab.net/book/${id}`)}
-              target="_blank"><img src="/images/common/icon-x.svg" alt="Xでシェア" /></a
-            >
-          </li>
-          <li>
-            <a href={`https://www.facebook.com/sharer/sharer.php?u=https://books.428lab.net/book/${id}`} target="_blank"
-              ><img src="/images/common/icon-facebook.svg" alt="Facebookでシェア" /></a
-            >
-          </li>
-        </ul>
+        <dl class="c-book-share">
+          <dt>SHARE</dt>
+          <dd>
+            <a href={`https://twitter.com/intent/tweet?text=${shareText}`} target="_blank" rel="noopener">
+              <svg
+                class="w-6 h-6"
+                width="27"
+                height="25"
+                viewBox="0 0 27 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                ><title>X</title><path
+                  d="M20.7915 0.860352H24.8397L15.9957 11.0671L26.4 24.9561H18.2535L11.8728 16.5325L4.57194 24.9561H0.521318L9.98092 14.0389L0 0.860352H8.35333L14.1209 8.55988L20.7915 0.860352ZM19.3708 22.5095H21.6139L7.13447 3.17849H4.72735L19.3708 22.5095Z"
+                  class="svg-fill-1"></path></svg
+              >
+            </a>
+          </dd>
+          <dd>
+            <a href={`https://www.facebook.com/sharer/sharer.php?u=${canonicalURL}`}  target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1021"
+                ><title>Facebook</title><path
+                  class="svg-fill-1"
+                  d="M1024,515C1024,232.23,794.77,3,512,3S0,232.23,0,515c0,255.55,187.23,467.37,432,505.78V663H302V515H432V402.2C432,273.88,508.44,203,625.39,203c56,0,114.61,10,114.61,10V339H675.44c-63.6,0-83.44,39.47-83.44,80v96H734L711.3,663H592v357.78C836.77,982.37,1024,770.55,1024,515Z"
+                  transform="translate(0 -3)"></path><path
+                  class="svg-fill-2"
+                  d="M711.3,660,734,512H592V416c0-40.49,19.84-80,83.44-80H740V210s-58.59-10-114.61-10C508.44,200,432,270.88,432,399.2V512H302V660H432v357.78a517.58,517.58,0,0,0,160,0V660Z"
+                  transform="translate(0 -3)"></path></svg
+              >
+            </a>
+          </dd>
+          <dd>
+            <a href={`https://bsky.app/intent/compose?text=${shareText}`} target="_blank" rel="noopener">
+              <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 568 501"
+                ><title>Bluesky</title><path
+                  d="M123.121 33.664C188.241 82.553 258.281 181.68 284 234.873c25.719-53.192 95.759-152.32 160.879-201.21C491.866-1.611 568-28.906 568 57.947c0 17.346-9.945 145.713-15.778 166.555-20.275 72.453-94.155 90.933-159.875 79.748C507.222 323.8 536.444 388.56 473.333 453.32c-119.86 122.992-172.272-30.859-185.702-70.281-2.462-7.227-3.614-10.608-3.631-7.733-.017-2.875-1.169.506-3.631 7.733-13.43 39.422-65.842 193.273-185.702 70.281-63.111-64.76-33.89-129.52 80.986-149.071-65.72 11.185-139.6-7.295-159.875-79.748C9.945 203.659 0 75.291 0 57.946 0-28.906 76.135-1.612 123.121 33.664Z"
+                  class="svg-fill-1"></path></svg
+              >
+            </a>
+          </dd>
+          <dd>
+            <a href={`https://nostter.app/post?content=${shareText}`} target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                <title>nostter</title>
+                <path
+                  d="M71.2,54.4c10-0.1,18.2,3.7,25.2,10.3c4.9,4.6,9.8,9.2,14,14.5c5,6.3,6.9,18.5-1.5,25.4c-6,5-12.9,7.3-20.8,5.2
+                  c-1.5-0.4-2.9-0.9-4.3-1.5c-3.6-1.6-6.7-0.9-9.3,2c-2.9,3.2-6.3,5.7-9.8,7.9c-6.7,4.3-13.7,3.9-20.4,0.4c-6.4-3.4-8.9-9.4-8.6-16.5
+                  c0.3-6.2,0.7-12.5,2.3-18.5c2.4-9.2,6.5-17.5,14.4-23.4C58.1,56.1,64.4,54.1,71.2,54.4z M89.5,15c-3.9-5.7-9.1-9.4-16.3-8.2
+                  c-7,1.2-10.9,6-12.8,12.6c-1.8,6.5-0.9,12.8,2.3,18.7c5.1,9.4,15.9,12.5,23.5,6.8c5.3-4,7.2-9.7,7.3-16.2
+                  C93.6,23.7,92.3,19.1,89.5,15z M52.7,45.4c1.9-9.9-1.6-18-9.3-24c-4.7-3.7-10.3-5.1-16.2-2.5c-5.6,2.5-8.4,7.1-9.1,13
+                  c-0.9,7.9,1.7,14.7,7.3,20.3c3.5,3.6,7.9,5.5,11.1,5.6C45.4,57.7,51.3,52.9,52.7,45.4z M108.2,31.2C97.8,35.5,93,50.3,98.9,59.9
+                  c3.9,6.3,10.9,8.3,17.6,4.9c9.3-4.7,13.6-18.9,8.1-27.8c-2.5-4.1-6.3-6.8-11.4-6.8C111.4,30.2,109.8,30.6,108.2,31.2z M33.6,80.3
+                  c2-10.2-6.1-21.1-16.9-23.1C9.4,55.9,2.8,60.4,1.3,67.5C-1,78.8,9.2,91.1,20.7,91.1C27.4,91,32.3,87,33.6,80.3z"
+                  class="svg-fill-1"></path>
+              </svg>
+            </a>
+          </dd>
+        </dl>
         <h1 class="c-book-block__title">
           <Fragment set:html={book.h1} />
         </h1>

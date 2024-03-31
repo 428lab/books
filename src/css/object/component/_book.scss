@@ -395,6 +395,40 @@
   }
 }
 
+.c-book-share{
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: flex-end;
+
+  dt{
+    font-size: 12px;
+    background-color: #000;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 12px;
+  }
+  dd{
+    width: 28px;
+  }
+  .svg-fill-1{
+    fill: #000;
+  }
+  .svg-fill-2{
+    fill: #fff;
+  }
+  a{
+    transition: all 0.4s;
+    display: block;
+    @include hover{
+      transform: scale(1.3);
+    }
+  }
+
+}
+
+
+
 /* ---------------------------- */
 /* --- Base --- */
 /* ---------------------------- */
