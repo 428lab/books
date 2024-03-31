@@ -1,4 +1,6 @@
 ---
+import { SiteName } from '../config/siteState'
+
 interface Props {
   isIndex: boolean
 }
@@ -12,7 +14,7 @@ const LogoElm = isIndex ? "h1" : "div"
 <header class="l-header">
   <LogoElm class="l-header-logo">
     <a href="/">
-      <img src={`/images/common/logo.svg`} alt="428LAB BOOKS（仮）" />
+      <img src={`/images/common/logo.svg`} alt=`${SiteName}` />
     </a>
   </LogoElm>
   <nav class="l-header-nav">
