@@ -1,0 +1,70 @@
+@use "../foundation/global" as *;
+
+.l-footer {
+  background-color: $c-accent;
+  border-top: 3px solid $c-accent;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  @include bp(sm) {
+    display: block;
+  }
+}
+
+.l-footer-copyright{
+  @include font-noto-sans;
+  font-weight: 600;
+  @include bp(sm) {
+    text-align: center;
+  }
+  a{
+    color: $text-primary;
+    font-weight: 800;
+    @include hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+.l-footer-share{
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  @include bp(sm) {
+    justify-content: center;
+  }
+
+  dt{
+    font-size: 12px;
+    background-color: #000;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 12px;
+  }
+  dd{
+    width: 28px;
+  }
+  .svg-fill-1{
+    fill: #000;
+    transition: fill 0.4s;
+  }
+  .svg-fill-2{
+    fill: #fff;
+    transition: fill 0.4s;
+  }
+  a{
+    @include hover{
+      .svg-fill-1{
+        fill: #fff;
+      }
+      .svg-fill-2{
+        fill: #000;
+      }
+    
+    }
+  }
+}
