@@ -1,1 +1,1 @@
-export const SiteName = "428LAB BOOKS（仮）"
+export const SiteName = "四谷ラボ BOOKS"
