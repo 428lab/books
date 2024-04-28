@@ -1,6 +1,15 @@
 {
   "newBookNum": 1,
-  "mainVisualPC": "/images/book/002/main-pc.webp",
-  "mainVisualSP": "/images/book/002/main-sp.webp",
-  "mainVisualHref": "/book/002/"
+  "mvItems": [
+    {
+      "PC": "/images/book/003/main-pc.webp",
+      "SP": "/images/book/003/main-sp.webp",
+      "Href": "/book/003/"
+    },
+    {
+      "PC": "/images/book/003/main-pc-2.webp",
+      "SP": "/images/book/003/main-sp-2.webp",
+      "Href": "/book/003/"
+    }
+  ]
 }

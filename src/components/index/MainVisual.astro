@@ -1,0 +1,69 @@
+---
+import type { mvItem } from "../../types"
+
+interface Props {
+  items: mvItem[]
+}
+
+const { items } = Astro.props
+---
+
+<astro-mv>
+  <swiper-container init="false">
+    {
+      items.map((item) => (
+        <swiper-slide>
+          <a href={item.Href}>
+            <picture>
+              <source media="(max-width: 768px)" srcset={item.SP} />
+              <img src={item.PC} alt="" />
+            </picture>
+          </a>
+        </swiper-slide>
+      ))
+    }
+  </swiper-container>
+</astro-mv>
+<script>
+  import Swiper from "swiper"
+  import { EffectFade } from "swiper/modules"
+  import "swiper/css/bundle"
+  import "swiper/element/css/effect-fade"
+  import { register } from "swiper/element/bundle"
+  register()
+  // 新しいタイプのHTML要素の動作を定義する
+  class AstroMV extends HTMLElement {
+    constructor() {
+      super()
+      // swiper element
+      const swiperEl = document.querySelector("swiper-container")
+
+      // swiper parameters
+      const swiperParams = {
+        slidesPerView: 1,
+        loop: true,
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
+        },
+        modules: [EffectFade],
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        },
+      }
+
+      if (swiperEl) {
+        // now we need to assign all parameters to Swiper element
+        Object.assign(swiperEl, swiperParams)
+
+        // and now initialize it
+        swiperEl.initialize()
+      }
+    }
+  }
+
+  // <astro-heart>要素としてAstroHeartクラスを利用することをブラウザに教える
+  customElements.define("astro-mv", AstroMV)
+</script>

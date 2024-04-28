@@ -7,13 +7,14 @@ import Backno from "../components/index/Backno.astro"
 
 import type { IndexProps } from "../types/index"
 import type { Book } from "../types/book"
+import MainVisual from "../components/index/MainVisual.astro"
 
 interface IndexDataFile {
   default: IndexProps
 }
 const indexProps = await Astro.glob<IndexDataFile>("../content/index.json")
 
-const { newBookNum, mainVisualPC, mainVisualSP, mainVisualHref } = indexProps[0].default
+const { newBookNum, mvItems } = indexProps[0].default
 
 // 全書籍データ取得
 
@@ -32,12 +33,7 @@ const oldBooks = books.splice(newBookNum)
   <div class="p-index-wrap">
     <div class="p-index-hero">
       <div class="p-index-hero__body">
-        <a href={mainVisualHref}>
-          <picture>
-            <source media="(max-width: 768px)" srcset={mainVisualSP} />
-            <img src={mainVisualPC} alt="" />
-          </picture>
-        </a>
+        <MainVisual items={mvItems} />
       </div>
     </div>
 

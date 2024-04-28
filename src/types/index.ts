@@ -3,4 +3,10 @@ export type IndexProps = {
   mainVisualPC: string
   mainVisualSP: string
   mainVisualHref: string
+  mvItems: mvItem[]
+}
+export type mvItem = {
+  PC: string
+  SP: string
+  Href: string
 }
