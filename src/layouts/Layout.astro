@@ -13,7 +13,7 @@ const { title, description, ogp, isIndex } = Astro.props
 
 const metaTitle = title ? `${title} | ${SiteName}` : `${SiteName}`
 const metaDesc = description || "四谷ラボで頒布した書籍の情報です。"
-const metaOgp = ogp ? new URL(ogp, Astro.site) : new URL("/images/ogp.jpg", Astro.site)
+const metaOgp = ogp ? new URL(ogp, Astro.site) : new URL("/images/ogp.png", Astro.site)
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 
