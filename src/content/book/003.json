@@ -17,36 +17,37 @@
   "longDescription": "かつて通信インフラの一部とまで言われたX。近年は情報がどんどんコントロールされ、コミュニティやエンジニアにとってのびのびと使いづらいSNSになってしまいつつあります。そんな中、圧倒的に自由な分散型SNSである、Nostr、Bluesky、そしてConcurrentが盛り上がりを見せています。<br>この本はそんな分散型SNSをこよなく愛し謳歌するライター陣、イラストレーター陣の熱い想いで作られた、あなたを分散型SNSの世界にいざなうガイドブックです。<br><br>あなたも、この本を手に分散型SNSに夢中になってみませんか？",
   "index": [
     {
-      "section": "1章　Hello,Nostr!",
-      "contents": ["NIP-01を読む", "Nostrの仕組み", "Nostrをはじめよう"]
+      "section": "Hello,Nostr!",
+      "contents": ["NIP-01を読む（2024年春）", "Nostrのしくみ", "Nostrをはじめよう"]
     },
     {
-      "section": "2章　Yo Bluesky!",
+      "section": "Yo Bluesky!",
       "contents": ["Blueskyはじめましてガイド", "Bluesky上に中間領域を構築する意義と方法"]
     },
     {
-      "section": "3章　C’mon! Concurrent!",
-      "contents": ["Concurrent Deep-Dive", "C'mon! Concurrent!"]
+      "section": "C’mon! Concurrent!",
+      "contents": ["Concurrent Deep-Dive", "C'mon! Concurrent!Concurrentのはじめかた","Why is Concurrent with the Nostr?"]
     },
     {
-      "section": "4章　Nostr next stage",
+      "section": "Nostr next stage",
       "contents": [
         "手を動かして学ぶ Nostrプロトコル 2024",
         "Nostrを翻訳しよう！",
-        "WTF IS NOSTR?～クライアントマスターへの道～"
+        "WTF IS NOSTR?～クライアントマスターへの道～",
+        "最速のリレーを目指して ～C++リレー開発奮闘記～"
       ]
     },
     {
-      "section": "5章　Bluesky next stage",
+      "section": "Bluesky next stage",
       "contents": ["Lexiconについて", "Bluesky公式クライアントの英語表示を日本語へ翻訳する作業に参加してみた！"]
     },
     {
-      "section": "6章　What is 四谷ラボ？",
-      "contents": ["四谷ラボって何なの？？", "四谷ラボ紹介", "過去書籍紹介"]
+      "section": "What is 四谷ラボ？",
+      "contents": ["四谷ラボって何なの？？"]
     },
     {
       "section": "Artサイド",
-      "contents": ["コミック", "イラストギャラリー"]
+      "contents": ["NostrちゃんとBlueskyちゃん","ナブ×こん！", "イラストギャラリー"]
     }
   ],
   "member": [
@@ -58,6 +59,17 @@
           "url1": "https://nostter.app/shino3.net",
           "url2": "https://bsky.app/profile/shino3.net",
           "url3": "https://x.com/SHINOHARATTT"
+        }
+      ]
+    },
+    {
+      "role": "マネージャー",
+      "member": [
+        {
+          "name": "おっぱぴぃ",
+          "url1": "https://nostter.app/oppapili@okada-takuya.github.io",
+          "url2": "https://bsky.app/profile/oppapili.bsky.social",
+          "url3": "https://x.com/oppapili"
         }
       ]
     },
@@ -130,7 +142,7 @@
           "url3": "https://nostree.me/godzhigella@higedamc.github.io"
         },
         {
-          "name": "Interaction Design Labs",
+          "name": "ひで部",
           "url1": "https://bsky.app/profile/interactionlabs.bsky.social",
           "url2": "",
           "url3": ""
@@ -146,6 +158,29 @@
           "url1": "https://bsky.app/profile/hima.bsky.social",
           "url2": "https://sites.google.com/view/himazinn/home",
           "url3": "https://discord.gg/gizmodo"
+        }
+      ]
+    },
+    {
+      "role": "査読",
+      "member": [
+        {
+          "name": "Nokotaro Takeda",
+          "url1": "https://nostter.app/takenoko@nokotaro.com",
+          "url2": "https://bsky.app/profile/nokotaro.com",
+          "url3": "https://about.nokotaro.com"
+        },
+        {
+          "name": "しげぽん",
+          "url1": "https://bsky.app/profile/shigepon.net",
+          "url2": "https://shigepon.net/",
+          "url3": ""
+        },
+        {
+          "name": "Hirofumi Ukawa",
+          "url1": "https://bsky.app/profile/ukawa.bsky.social",
+          "url2": "",
+          "url3": ""
         }
       ]
     },
@@ -214,46 +249,12 @@
       ]
     },
     {
-      "role": "デザイナー/DTP/編集",
+      "role": "デザイン・DTP・編集",
       "member": [
         {
           "name": "よそいち",
           "url1": "https://nostter.app/yosoichi@sksksketch.net",
           "url2": "https://bsky.app/profile/sksksketch.net",
-          "url3": ""
-        }
-      ]
-    },
-    {
-      "role": "マネージャー",
-      "member": [
-        {
-          "name": "おっぱぴぃ",
-          "url1": "https://nostter.app/oppapili@okada-takuya.github.io",
-          "url2": "https://bsky.app/profile/oppapili.bsky.social",
-          "url3": "https://x.com/oppapili"
-        }
-      ]
-    },
-    {
-      "role": "アドバイザー",
-      "member": [
-        {
-          "name": "Nokotaro Takeda",
-          "url1": "https://nostter.app/takenoko@nokotaro.com",
-          "url2": "https://bsky.app/profile/nokotaro.com",
-          "url3": "https://about.nokotaro.com"
-        },
-        {
-          "name": "しげぽん",
-          "url1": "https://bsky.app/profile/shigepon.net",
-          "url2": "https://shigepon.net/",
-          "url3": ""
-        },
-        {
-          "name": "Hirofumi Ukawa",
-          "url1": "https://bsky.app/profile/ukawa.bsky.social",
-          "url2": "",
           "url3": ""
         }
       ]
