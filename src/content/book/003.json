@@ -48,5 +48,203 @@
       "section": "Artサイド",
       "contents": ["コミック", "イラストギャラリー"]
     }
+  ],
+  "member": [
+    {
+      "name": "Shino3",
+      "url1": "https://nostter.app/shino3.net",
+      "url2": "https://bsky.app/profile/shino3.net",
+      "url3": "https://x.com/SHINOHARATTT",
+      "role": "プロデューサー・ライター"
+    },
+    {
+      "name": "逆砂 参角",
+      "url1": "https://nostter.app/invertedtriangle358.github.io",
+      "url2": "https://concurrent.world/entity/CC6C3377319E664B849dE19d6Eb370204f900c813D/",
+      "url3": "",
+      "role": "ライター・イラストレーター"
+    },
+    {
+      "name": "Nighthaven",
+      "url1": "https://bsky.app/profile/moja.blue",
+      "url2": "",
+      "url3": "",
+      "role": "ライター・イラストレーター"
+    },
+    {
+      "name": "みりめい",
+      "url1": "https://bsky.app/profile/kawaiirailroads.millie-may.net",
+      "url2": "https://nostter.app/kawaiirailroads@millie-may.net",
+      "url3": "https://millie-may.net",
+      "role": "ライター・イラストレーター"
+    },
+    {
+      "name": "kojira",
+      "url1": "https://nostter.app/kojira@kojira.io",
+      "url2": "https://bsky.app/profile/kojira.io",
+      "url3": "https://x.com/kojira",
+      "role": "ライター"
+    },
+    {
+      "name": "ととがんま",
+      "url1": "https://bsky.app/profile/tote.gammalab.net",
+      "url2": "[HP] https://gammalab.net",
+      "url3": "",
+      "role": "ライター"
+    },
+    {
+      "name": "darashi",
+      "url1": "https://nostter.app/darashi.net",
+      "url2": "https://darashi.net",
+      "url3": "",
+      "role": "ライター"
+    },
+    {
+      "name": "かすてらふぃ",
+      "url1": "https://nostter.app/jiftechnify@c-stellar.net",
+      "url2": "https://bsky.app/profile/c-stellar.net",
+      "url3": "https://c-stellar.net",
+      "role": "ライター"
+    },
+    {
+      "name": "Henoya",
+      "url1": "https://bsky.app/profile/henoya.com",
+      "url2": "https://henoya.com",
+      "url3": "",
+      "role": "ライター"
+    },
+    {
+      "name": "発火大根",
+      "url1": "https://nostter.app/hakkadaikon@iris.to",
+      "url2": "https://bsky.app/profile/hakkadaikon.bsky.social",
+      "url3": "",
+      "role": "ライター"
+    },
+    {
+      "name": "kohei",
+      "url1": "https://nostter.app/godzhigella@higedamc.github.io",
+      "url2": "https://bsky.app/profile/godzhigella.bsky.social",
+      "url3": "https://nostree.me/godzhigella@higedamc.github.io",
+      "role": "ライター"
+    },
+    {
+      "name": "Interaction Design Labs",
+      "url1": "https://bsky.app/profile/interactionlabs.bsky.social",
+      "url2": "",
+      "url3": "",
+      "role": "ライター"
+    },
+    {
+      "name": "電子馬",
+      "url1": "https://nostter.app/erechorse.github.io",
+      "url2": "https://bsky.app/profile/erechorse.com",
+      "url3": "",
+      "role": "ライター"
+    },
+    {
+      "name": "Hima",
+      "url1": "https://bsky.app/profile/hima.bsky.social",
+      "url2": "https://sites.google.com/view/himazinn/home",
+      "url3": "https://discord.gg/gizmodo",
+      "role": "ライター"
+    },
+    {
+      "name": "崇徳",
+      "url1": "https://nostter.app/stok33.github.io",
+      "url2": "https://bsky.app/profile/stok33.bsky.social",
+      "url3": "https://stok33.github.io",
+      "role": "イラストレーター"
+    },
+    {
+      "name": "黒田",
+      "url1": "https://bsky.app/profile/krdrailway.gijirail.com",
+      "url2": "https://nostter.app/krdrailway@gijirail.com",
+      "url3": "https://gijirail.com",
+      "role": "イラストレーター"
+    },
+    {
+      "name": "ゆうひまわり",
+      "url1": "https://nostter.app/yuuhimawari@yuuhimawariero.net",
+      "url2": "https://www.pixiv.net/users/193378",
+      "url3": "",
+      "role": "イラストレーター"
+    },
+    {
+      "name": "たんぐれー",
+      "url1": "https://bsky.app/profile/tangure.bsky.social",
+      "url2": "",
+      "url3": "",
+      "role": "イラストレーター"
+    },
+    {
+      "name": "景文日向",
+      "url1": "https://bsky.app/profile/hi7ta0515.bsky.social",
+      "url2": "",
+      "url3": "",
+      "role": "イラストレーター"
+    },
+    {
+      "name": "花湖月子",
+      "url1": "https://bsky.app/profile/narhodona.bsky.social",
+      "url2": "",
+      "url3": "",
+      "role": "イラストレーター"
+    },
+    {
+      "name": "冬溝れい",
+      "url1": "https://bsky.app/profile/fuyumizo.com",
+      "url2": "",
+      "url3": "",
+      "role": "イラストレーター"
+    },
+    {
+      "name": "アルカリ",
+      "url1": "https://alcali.theblog.me/",
+      "url2": "https://bsky.app/profile/alkali.bsky.social",
+      "url3": "https://x.com/AlkaliTan3",
+      "role": "イラストレーター"
+    },
+    {
+      "name": "クコ",
+      "url1": "https://nostter.app/cuconoki@cuconoki.net",
+      "url2": "https://bsky.app/profile/cuconoki.net",
+      "url3": "https://cuconoki.net/",
+      "role": "WEBサイト"
+    },
+    {
+      "name": "よそいち",
+      "url1": "https://nostter.app/yosoichi@sksksketch.net",
+      "url2": "https://bsky.app/profile/sksksketch.net",
+      "url3": "",
+      "role": "デザイナー/DTP/編集"
+    },
+    {
+      "name": "おっぱぴぃ",
+      "url1": "https://nostter.app/oppapili@okada-takuya.github.io",
+      "url2": "https://bsky.app/profile/oppapili.bsky.social",
+      "url3": "https://x.com/oppapili",
+      "role": "マネージャー"
+    },
+    {
+      "name": "Nokotaro Takeda",
+      "url1": "https://nostter.app/takenoko@nokotaro.com",
+      "url2": "https://bsky.app/profile/nokotaro.com",
+      "url3": "https://about.nokotaro.com",
+      "role": "アドバイザー"
+    },
+    {
+      "name": "しげぽん",
+      "url1": "https://bsky.app/profile/shigepon.net",
+      "url2": "https://shigepon.net/",
+      "url3": "",
+      "role": "アドバイザー"
+    },
+    {
+      "name": "Hirofumi Ukawa",
+      "url1": "https://bsky.app/profile/ukawa.bsky.social",
+      "url2": "",
+      "url3": "",
+      "role": "アドバイザー"
+    }
   ]
 }
