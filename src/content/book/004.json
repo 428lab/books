@@ -1,0 +1,183 @@
+{
+  "id": "004",
+  "title": "Hello Nostr, Yo Bluesky 3 未来を担う分散型SNS",
+  "date": "2024-11-02T12:00:00+09:00",
+  "description": "目まぐるしく変わるSNS社会において、果たして完全に管理されたレコメンドエンジンと収益化システムは私達の社会に必要なのか。<br>あらためて民主的なSNSの側面からそれを思い直したいと考える。新しい分散型SNSは引っ越し先としての新規サービスでいいのか、はたまたその思想に未来を見るか。<br><br>現代に必要とされるSNSとしてのあるべき形を追い求めるそんなユーザーが集う書籍です",
+  "ogp": "/images/book/004/ogp.jpg",
+  "samplePage": 8,
+  "h1": "Hello Nostr, Yo Bluesky 3<br>未来を担う分散型SNS",
+  "events": [
+    {
+      "eventName": "技術書典17",
+      "spaceNo": "こ10"
+    }
+  ],
+  "price": "￥1,500",
+  "online_price": "￥1,000",
+  "online_set_price": "￥1,500",
+  "longDescription": "目まぐるしく変わるSNS社会において、果たして完全に管理されたレコメンドエンジンと収益化システムは私達の社会に必要なのか。<br>あらためて民主的なSNSの側面からそれを思い直したいと考える。新しい分散型SNSは引っ越し先としての新規サービスでいいのか、はたまたその思想に未来を見るか。<br><br>現代に必要とされるSNSとしてのあるべき形を追い求めるそんなユーザーが集う書籍です",
+  "market": [
+    {
+      "name": "技術書典マーケット",
+      "url": "https://techbookfest.org/product/knxQKegA9kej2cmyzqfXJF"
+    }
+  ],
+  "index": [
+    {
+      "section": "Hello,Nostr!",
+      "contents": ["Nostrのしくみ", "NIP-01を読む（2024年秋）", "んちゃんねる開発記", "もののツールたち"]
+    },
+    {
+      "section": "Yo Bluesky!",
+      "contents": ["Blueskyとは", "Blueskyクライアント紹介", "最近のBluesky動向", "Kubernetes上にPDSを立てる"]
+    },
+    {
+      "section": "C’mon! Concrnt!",
+      "contents": ["さらっとわかるConcrnt", "Concrnt in a Can: 1GB メモリで始める Concrnt ホスティング","A Little Deeper Dive into Concrnt"]
+    },
+    {
+      "section": "分散SNSの世界!",
+      "contents": ["分散型SNSへと至る一本の(とても曲がりくねった)道"]
+    }
+  ],
+  "member": [
+    {
+      "role": "プロデューサー・ライター・DTP",
+      "member": [
+        {
+          "name": "Shino3",
+          "url1": "https://nostter.app/shino3.net",
+          "url2": "https://bsky.app/profile/shino3.net",
+          "url3": ""
+        }
+      ]
+    },
+    {
+      "role": "ライター・DTP",
+      "member": [
+        {
+          "name": "darashi",
+          "url1": "https://nostter.app/darashi.net",
+          "url2": "https://darashi.net",
+          "url3": ""
+        },
+        {
+          "name": "かすてらふぃ",
+          "url1": "https://concrnt.world/c-stellar.net",
+          "url2": "https://nostter.app/jiftechnify@c-stellar.net",
+          "url3": ""
+        }
+      ]
+    },
+    {
+      "role": "ライター",
+      "member": [
+        {
+          "name": "kojira",
+          "url1": "https://nostter.app/kojira@kojira.io",
+          "url2": "https://bsky.app/profile/kojira.io",
+          "url3": "https://x.com/kojira"
+        },
+        {
+          "name": "もの₍ ･ᴗ･ ₎",
+          "url1": "https://nostter.app/mono@tsukemonogit.github.io",
+          "url2": "",
+          "url3": ""
+        },
+        {
+          "name": "Nighthaven",
+          "url1": "https://bsky.app/profile/moja.blue",
+          "url2": "[HP] https://publish.obsidian.md/saivo/",
+          "url3": ""
+        },
+        {
+          "name": "shigepon7(しげぽん)",
+          "url1": "https://bsky.app/profile/shigepon.net",
+          "url2": "https://shigepon.net",
+          "url3": ""
+        },
+        {
+          "name": "ばいそに / baisony",
+          "url1": "https://bsky.app/profile/bisn.ucho-ten.net",
+          "url2": "https://app.ucho-ten.net",
+          "url3": ""
+        },
+        {
+          "name": "ととがんま",
+          "url1": "https://concrnt.world/tote.gammalab.net",
+          "url2": "https://gammalab.net",
+          "url3": ""
+        },
+        {
+          "name": "kznrluk",
+          "url1": "https://concrnt.world/anyfrog.net",
+          "url2": "https://stack.anyfrog.net",
+          "url3": ""
+        },
+        {
+          "name": "電子馬",
+          "url1": "https://nostter.app/erechorse.github.io",
+          "url2": "https://bsky.app/profile/erechorse.com",
+          "url3": ""
+        }
+      ]
+    },
+    {
+      "role": "イラストレーター",
+      "member": [
+        {
+          "name": "崇徳",
+          "url1": "https://nostter.app/stok33.github.io",
+          "url2": "https://bsky.app/profile/stok33.bsky.social",
+          "url3": ""
+        },
+        {
+          "name": "黒田",
+          "url1": "https://bsky.app/profile/krdrailway.gijirail.com",
+          "url2": "https://nostter.app/krdrailway@gijirail.com",
+          "url3": ""
+        },
+        {
+          "name": "たんぐれー",
+          "url1": "https://bsky.app/profile/tangure.bsky.social",
+          "url2": "",
+          "url3": ""
+        },
+        {
+          "name": "冬溝れい",
+          "url1": "https://bsky.app/profile/fuyumizo.com",
+          "url2": "",
+          "url3": ""
+        },
+        {
+          "name": "アルカリ",
+          "url1": "https://alcali.theblog.me/",
+          "url2": "",
+          "url3": ""
+        }
+      ]
+    },
+    {
+      "role": "デザイン",
+      "member": [
+        {
+          "name": "よそいち",
+          "url1": "https://nostter.app/yosoichi@sksksketch.net",
+          "url2": "https://bsky.app/profile/sksksketch.net",
+          "url3": ""
+        }
+      ]
+    },
+    {
+      "role": "WEBサイト",
+      "member": [
+        {
+          "name": "クコ",
+          "url1": "https://nostter.app/cuconoki@cuconoki.net",
+          "url2": "https://bsky.app/profile/cuconoki.net",
+          "url3": "https://cuconoki.net/"
+        }
+      ]
+    }
+  ]
+}

@@ -2,14 +2,14 @@
   "newBookNum": 1,
   "mvItems": [
     {
-      "PC": "/images/book/003/main-pc.webp",
-      "SP": "/images/book/003/main-sp.webp",
-      "Href": "/book/003/"
+      "PC": "/images/book/004/main-pc.webp",
+      "SP": "/images/book/004/main-sp.webp",
+      "Href": "/book/004/"
     },
     {
-      "PC": "/images/book/003/main-pc-2.webp",
-      "SP": "/images/book/003/main-sp-2.webp",
-      "Href": "/book/003/"
+      "PC": "/images/book/004/main-pc-2.webp",
+      "SP": "/images/book/004/main-sp-2.webp",
+      "Href": "/book/004/"
     }
   ]
 }
