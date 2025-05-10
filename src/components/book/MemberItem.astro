@@ -23,7 +23,7 @@ const isURL = (url: string) => {
           {mem.url1 && isURL(mem.url1) ? (
             <li>
               <a href={mem.url1} target="_blank" rel="noopener">
-                {mem.url1}
+                {mem.label1? mem.label1 : mem.url1}
               </a>
             </li>
           ) : (
@@ -32,7 +32,7 @@ const isURL = (url: string) => {
           {mem.url2 && isURL(mem.url2) ? (
             <li>
               <a href={mem.url2} target="_blank" rel="noopener">
-                {mem.url2}
+                {mem.label2? mem.label2 : mem.url2}
               </a>
             </li>
           ) : (
@@ -41,7 +41,7 @@ const isURL = (url: string) => {
           {mem.url3 && isURL(mem.url3) ? (
             <li>
               <a href={mem.url3} target="_blank" rel="noopener">
-                {mem.url3}
+                {mem.label3? mem.label3 : mem.url3}
               </a>
             </li>
           ) : (

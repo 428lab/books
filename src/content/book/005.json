@@ -1,0 +1,202 @@
+{
+  "id": "005",
+  "title": "Enjoy 分散型SNS メタクソ化の特効薬は分散型だけ！",
+  "date": "2024-11-02T12:00:00+09:00",
+  "description": "分散型SNS のNostr、Bluesky、Concrnt にターゲットを絞った内容となっています！タイトルにもありますが、分散型のSNS はサービスのメタクソ化を止める手段になるのでは？というところにもフォーカスを当てています。",
+  "ogp": "/images/book/005/ogp.jpg",
+  "h1": "Enjoy 分散型SNS<br>メタクソ化の特効薬は分散型だけ！",
+  "events": [
+    {
+      "eventName": "技術書典18",
+      "spaceNo": "し03"
+    }
+  ],
+  "price": "￥---",
+  "online_price": "￥---",
+  "online_set_price": "￥---",
+  "longDescription": "分散型SNS のNostr、Bluesky、Concrnt にターゲットを絞った内容となっています！<br>タイトルにもありますが、分散型のSNS はサービスのメタクソ化を止める手段になるのでは？というところにもフォーカスを当てています。<br>分散型SNSはまだまだ未開の荒野。魅力的なこの空間、本書をきっかけに是非あなたも触れて欲しいです。<br>",
+  "index": [
+    {
+      "section": "Hello Nostr!",
+      "contents": [
+        "Nostrとは",
+        "NIP-01を読む（2025 年春）",
+        "Nostr × 空間コンピューティング",
+        "Nostrで助成金もらった話 申請編",
+        "Nostrで助成金もらった話 税務署編",
+        "SNSに冒険を！",
+        "AIが感情を持った日",
+        "音楽生成AIでNostrの歌を作った話",
+        "Nostrasia 2025開催！"
+      ]
+    },
+    {
+      "section": "Yo Bluesky!",
+      "contents": ["Blueskyとは", "全国Blueskyアイディアソン開催！"]
+    },
+    {
+      "section": "C'mon! Concrnt!",
+      "contents": ["ConcrntのPolicy機能について", "VR世界からもConcrntがやりたい！"]
+    },
+    {
+      "section": "et cetera",
+      "contents": [
+        "分散SNS集会に行こう！",
+        "バイブコーディングで分散型SNS開発",
+        "分散SNSとわたし",
+        "メタクソ化と分散型プラットフォーム"
+      ]
+    }
+  ],
+  "member": [
+    {
+      "role": "プロデューサー・ライター・DTP",
+      "member": [
+        {
+          "name": "Shino3",
+          "label1": "Nostr",
+          "url1": "https://nostter.app/shino3.net",
+          "label2": "Bluesky",
+          "url2": "https://bsky.app/profile/shino3.net"
+        }
+      ]
+    },
+    {
+      "role": "ライター・DTP",
+      "member": [
+        {
+          "name": "kojira",
+          "label1": "Nostr",
+          "url1": "https://nostter.app/kojira.io",
+          "label2": "Bluesky",
+          "url2": "https://bsky.app/profile/kojira.io"
+        }
+      ]
+    },
+    {
+      "role": "ライター",
+      "member": [
+        {
+          "name": "darashi",
+          "label1": "Nostr",
+          "url1": "https://nostter.app/darashi.net",
+          "label2": "Bluesky",
+          "url2": "https://bsky.app/profile/"
+        },
+        {
+          "name": "Morinosuke",
+          "label1": "Nostr",
+          "url1": "https://nostter.app/npub1vuy8f7nd64zwm3vxwa3uu7f42guk4mw6rf0a5w5hjj0kd2c2e7es8t229r",
+          "label2": "Bluesky",
+          "url2": "https://bsky.app/profile/"
+        },
+        {
+          "name": "もの₍ ･ᴗ･ ₎",
+          "label1": "Nostr",
+          "url1": "https://nostter.app/mono@tsukemonogit.github.io",
+          "label2": "Bluesky",
+          "url2": "https://bsky.app/profile/"
+        },
+        {
+          "name": "ひゅうが霄（しょう）",
+          "label1": "Nostr",
+          "url1": "https://nostter.app/showV3@showhyuga.pages.dev",
+          "label2": "Blog",
+          "url2": "https://showhyuga.blogspot.com/"
+        },
+        {
+          "name": "Nawashiro",
+          "label1": "HP",
+          "url1": "https://nawashiro.dev/",
+          "label2": "",
+          "url2": ""
+        },
+        {
+          "name": "淀川",
+          "label1": "Nostr",
+          "url1": "https://nostter.app/yodogawa@crayfish-ghost.github.io",
+          "label2": "Bluesky",
+          "url2": "https://bsky.app/profile/yodogawa.bsky.social"
+        }
+      ]
+    },
+    {
+      "role": "イラストレーター",
+      "member": [
+        {
+          "name": "崇徳",
+          "label1": "Nostr",
+          "url1": "https://nostter.app/stok33.github.io",
+          "label2": "Bluesky",
+          "url2": "https://bsky.app/profile/stok33.bsky.social"
+        },
+        {
+          "name": "みりめい",
+          "label1": "HP",
+          "url1": "https://millie-may.net",
+          "label2": "Bluesky",
+          "url2": "https://bsky.app/profile/kawaiirailroads.millie-may.net"
+        },
+        {
+          "name": "たんぐれー",
+          "label1": "Bluesky",
+          "url1": "https://bsky.app/profile/tangure.bsky.social",
+          "label2": "",
+          "url2": ""
+        },
+        {
+          "name": "黒田",
+          "label1": "HP",
+          "url1": "https://gijirail.com",
+          "label2": "Bluesky",
+          "url2": "https://bsky.app/profile/krdrailway.gijirail.com"
+        },
+        {
+          "name": "冬溝れい",
+          "label1": "Bluesky",
+          "url1": "https://bsky.app/profile/fuyumizo.bsky.social",
+          "label2": "",
+          "url2": ""
+        },
+        {
+          "name": "逆砂 参角",
+          "label1": "Nostr",
+          "url1": "https://nostter.app/invertedtriangle358.github.io",
+          "label2": "Concrnt",
+          "url2": "https://concrnt.world/con1gwh72vwh8mqjhtvdmuu030kle7d5luwce4qvtw"
+        },
+        {
+          "name": "べったん",
+          "label1": "Nostr",
+          "url1": "https://nostter.app/betoneto@nokakoi.com",
+          "label2": "HP",
+          "url2": "https://betoneto.win"
+        }
+      ]
+    },
+    {
+      "role": "デザイナー",
+      "member": [
+        {
+          "name": "よそいち",
+          "label1": "Nostr",
+          "url1": "https://nostter.app/yosoichi@sksksketch.net",
+          "label2": "Bluesky",
+          "url2": "https://bsky.app/profile/sksksketch.net"
+        }
+      ]
+    },
+    {
+      "role": "WEBサイト",
+      "member": [
+        {
+          "name": "クコ",
+          "label1": "HP",
+          "url1": "https://cuconoki.net/",
+          "label2": "",
+          "url2": ""
+        }
+      ]
+    }
+  ]
+}
