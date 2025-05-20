@@ -4,6 +4,7 @@
   "date": "2024-11-02T12:00:00+09:00",
   "description": "分散型SNS のNostr、Bluesky、Concrnt にターゲットを絞った内容となっています！タイトルにもありますが、分散型のSNS はサービスのメタクソ化を止める手段になるのでは？というところにもフォーカスを当てています。",
   "ogp": "/images/book/005/ogp.jpg",
+  "samplePage": 7,
   "h1": "Enjoy 分散型SNS<br>メタクソ化の特効薬は分散型だけ！",
   "events": [
     {
@@ -11,9 +12,9 @@
       "spaceNo": "し03"
     }
   ],
-  "price": "￥---",
-  "online_price": "￥---",
-  "online_set_price": "￥---",
+  "price": "￥1,500",
+  "online_price": "￥1,000",
+  "online_set_price": "￥1,500",
   "longDescription": "分散型SNS のNostr、Bluesky、Concrnt にターゲットを絞った内容となっています！<br>タイトルにもありますが、分散型のSNS はサービスのメタクソ化を止める手段になるのでは？というところにもフォーカスを当てています。<br>分散型SNSはまだまだ未開の荒野。魅力的なこの空間、本書をきっかけに是非あなたも触れて欲しいです。<br>",
   "index": [
     {

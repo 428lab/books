@@ -18,8 +18,6 @@ const metaOgp = ogp ? new URL(ogp, Astro.site) : new URL("/images/ogp.png", Astr
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 
 const shareText = encodeURI(`${metaTitle}\n${canonicalURL}`)
-
-
 ---
 
 <!doctype html>
@@ -46,7 +44,7 @@ const shareText = encodeURI(`${metaTitle}\n${canonicalURL}`)
 
     <meta property="og:url" content={canonicalURL} />
     <link rel="canonical" href={canonicalURL} />
-
+    <link rel="icon alternate" type="image/x-icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -76,7 +74,7 @@ const shareText = encodeURI(`${metaTitle}\n${canonicalURL}`)
             </a>
           </dd>
           <dd>
-            <a href={`https://www.facebook.com/sharer/sharer.php?u=${canonicalURL}`}  target="_blank" rel="noopener">
+            <a href={`https://www.facebook.com/sharer/sharer.php?u=${canonicalURL}`} target="_blank" rel="noopener">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1021"
                 ><title>Facebook</title><path
                   class="svg-fill-1"
