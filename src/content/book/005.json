@@ -119,6 +119,13 @@
           "url2": ""
         },
         {
+          "name": "totegamma",
+          "label1": "Concrnt",
+          "url1": "https://concrnt.world/tote.gammalab",
+          "label2": "",
+          "url2": ""
+        },
+        {
           "name": "淀川",
           "label1": "Nostr",
           "url1": "https://nostter.app/yodogawa@crayfish-ghost.github.io",
@@ -173,11 +180,9 @@
           "url2": "https://concrnt.world/con1gwh72vwh8mqjhtvdmuu030kle7d5luwce4qvtw"
         },
         {
-          "name": "べったん",
-          "label1": "Nostr",
-          "url1": "https://nostter.app/betoneto@nokakoi.com",
-          "label2": "HP",
-          "url2": "https://betoneto.win"
+          "name": "りゅべる",
+          "label1": "X",
+          "url1": "https://x.com/ryuberu5024"
         }
       ]
     },
@@ -202,6 +207,18 @@
           "url1": "https://cuconoki.net/",
           "label2": "",
           "url2": ""
+        }
+      ]
+    },
+    {
+      "role": "Special Thanks",
+      "member": [
+        {
+          "name": "べったん",
+          "label1": "Nostr",
+          "url1": "https://nostter.app/betoneto@nokakoi.com",
+          "label2": "HP",
+          "url2": "https://betoneto.win"
         }
       ]
     }
